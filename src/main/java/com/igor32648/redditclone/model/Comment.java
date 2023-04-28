@@ -20,7 +20,8 @@ import lombok.Setter;
 @NoArgsConstructor
 @Entity
 public class Comment {
-    @Id@GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long commentId;
     private String commentText;
     @ManyToOne(fetch = FetchType.LAZY)
